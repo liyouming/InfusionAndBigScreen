@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/fugao_light_bg">
+        <LinearLayout
+            android:id="@+id/ll_title_back"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:gravity="center_vertical">
+            <ImageView
+                android:id="@+id/iv_CallBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/acb_back_holo_dark"/>
+            <TextView
+                android:id="@+id/tv_Call"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="呼叫"
+                android:textSize="16dp"
+                android:textColor="@color/white"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      style="@style/text.uc_title"
+      android:layout_marginTop="16dp"
+      android:layout_marginLeft="8dp"
+      android:layout_marginRight="8dp"
+      android:text="下拉选择呼叫内容"/>
+
+  <com.fugao.infusion.view.ComboBox
+      android:id="@+id/cboCall"
+      android:layout_toRightOf="@+id/tvOther"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="5dp"
+      android:layout_marginTop="20dp"/>
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      style="@style/text.uc_title"
+      android:layout_marginTop="16dp"
+      android:layout_marginLeft="8dp"
+      android:layout_marginRight="8dp"
+      android:text="呼叫内容(可自定义修改)"/>
+
+  <EditText
+      android:layout_marginTop="20sp"
+      android:id="@+id/etCall"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"/>
+
+  <Button
+      android:layout_marginLeft="16dp"
+      android:layout_marginRight="16dp"
+      android:layout_marginTop="50dp"
+      android:id="@+id/btnCall"
+      android:layout_width="match_parent"
+      android:layout_height="42dip"
+      android:background="@drawable/fugao_light_bg"
+      android:gravity="center"
+      android:text="呼    叫"
+      android:textColor="@color/white"
+      android:textSize="18sp"/>
+
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">移动输液V1.0</string>
+    <string name="title_activity_welcome">WelcomeActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_my">MyActivity</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="excute">确定</string>
+    <string name="title_activity_index"></string>
+    <string name="title_activity_body_click_avtity">guideHospital</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_body_detail">ChoiceBody</string>
+    <string name="title_activity_test">TestActivity</string>
+    <string name="call_phone_order_message">联系我们</string>
+    <string name="call_phone_order_num">1111111111</string>
+    <string name="aboutus">上海复高计算机科技有限公司是最早从事医疗信息系统综合解决方案的提供商之一，致力于为医疗卫生领域提供一流软件产品和技术服务</string>
+    <string name="title_activity_loading">LoadingActivity</string>
+    <string name="app_version_description">©2014 上海万达复高%1$s</string>
+    <string name="title_activity_pai_yao">PaiYaoActivity</string>
+    <string name="title_activity_xunshi">XunshiActivity</string>
+    <string name="title_activity_role_choice">RoleChoiceActivity</string>
+    <string name="title_activity_choice_chuan_ci_qu">ChoiceChuanCiQuActivity</string>
+    <string name="title_activity_choice_confirmSettings">ScanConfirmSettingActivity</string>
+    <string name="title_activity_pai_ye">PaiYeActivity</string>
+    <string name="cancel">过 号</string>
+    <string name="doSuccess">执行成功</string>
+    <string name="doing">执行中...</string>
+    <string name="done">执行成功</string>
+    <string name="title_activity_seat">SeatActivity</string>
+    <string name="title_activity_seat_fragment">SeatFragment</string>
+    <string name="defaultLoadingInfo">正在努力加载数据...</string>
+    <string name="more_than_one_day">超过一天</string>
+    <string name="json">[{"BottleId":"214519391","InfusionId":"234455"},{"BottleId":"214519391","InfusionId":"234455"}]</string>
+
+</resources>

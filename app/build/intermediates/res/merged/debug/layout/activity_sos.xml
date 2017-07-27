@@ -1,0 +1,193 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFDAB9"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp" >
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="60dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="12dp"
+            android:background="@drawable/title_back"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:text="返回"
+            android:textColor="#ffffffff"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/comit"
+            android:layout_width="60dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/title_comit"
+            android:gravity="center"
+            android:text="提交"
+            android:textColor="#ffffffff"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="签到张江店"
+            android:textColor="#DC143C"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="220dip"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/suggest"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/table_qiandao_text"
+            android:gravity="top"
+            android:hint="请输入对此店的感受和看法，感谢您的参与！"
+            android:inputType="text"
+            android:padding="20dp"
+            android:paddingBottom="-50dp"
+            android:singleLine="true"
+            android:textSize="16sp" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="150dp"
+            android:text="还可以输入100个字符！"
+            android:textSize="14sp"
+            android:textStyle="italic" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="30dp"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/camera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/camera_icon" >
+            </ImageButton>
+
+            <LinearLayout
+                android:id="@+id/ll_imgs"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/camera"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+            </LinearLayout>
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/line_fenge_pink" >
+        </ImageView>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="12dp"
+            android:text="分享到："
+            android:textSize="16dp" >
+        </TextView>
+
+        <CheckBox
+            android:id="@+id/sina"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:button="@drawable/sina_icon"
+            android:clickable="true" >
+        </CheckBox>
+
+        <CheckBox
+            android:id="@+id/tencent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:button="@drawable/tecent_icon" >
+        </CheckBox>
+
+        <CheckBox
+            android:id="@+id/qq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:button="@drawable/qq_icon" >
+        </CheckBox>
+
+        <CheckBox
+            android:id="@+id/renren"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:button="@drawable/renren_icon" >
+        </CheckBox>
+
+        <CheckBox
+            android:id="@+id/qzoon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:button="@drawable/qzoon_icon" >
+        </CheckBox>
+
+        <CheckBox
+            android:id="@+id/douban"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:button="@drawable/douban_icon" >
+        </CheckBox>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/sign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/icon_sign"
+        android:clickable="true"
+        android:textSize="16dp" >
+    </TextView>
+
+</LinearLayout>

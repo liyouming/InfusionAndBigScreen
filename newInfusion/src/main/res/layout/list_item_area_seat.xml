@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/card_selector">
+
+    <TextView
+        android:id="@+id/showEmptySeat"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:textSize="18sp"
+        android:gravity="center_vertical"
+        android:layout_height="40dp"/>
+
+</LinearLayout>

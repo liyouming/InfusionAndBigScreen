@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 首页导航 -->
+    <string-array name="chuan_ci_bottom_bar_labels">
+        <item>统计</item>
+        <item>列表</item>
+        <item>更多</item>
+    </string-array>
+    <string-array name="paiyao_bottom_bar_labels">
+        <item>统计</item>
+        <item>列表</item>
+        <item>更多</item>
+    </string-array>
+    <string-array name="xunshi_bottom_bar_labels">
+        <item>统计</item>
+        <item>列表</item>
+        <item>更多</item>
+    </string-array>
+    <!-- 首页导航 -->
+    <string-array name="order_statues_arrays">
+        <item>未完成</item>
+        <item>已完成</item>
+    </string-array>
+    <string-array name="statues_arrays">
+        <item>全部</item>
+        <item>未完成</item>
+        <item>已完成</item>
+        <item>搜索</item>
+    </string-array>
+
+
+    <string-array name="arround_unnormal_reason">
+        <item>肿针、针头脱落</item>
+        <item>阻塞</item>
+        <item>输液不良反应</item>
+        <item>病情变化</item>
+        <item>离开输液区</item>
+        <item>其他</item>
+    </string-array>
+
+    <string-array name="infusionstatus_array">
+        <item>输液中</item>
+        <item>已完成</item>
+        <item>巡视</item>
+    </string-array>
+
+    <string-array name="infusionstatus_array1">
+        <item>执行</item>
+        <item>待穿刺</item>
+        <item>分配座位</item>
+        <item>已穿刺</item>
+    </string-array>
+
+    <string-array name="infusionstatus_array0">
+        <item>待排药</item>
+        <item>已排药</item>
+    </string-array>
+
+    <string-array name="workload_array">
+        <item>一天</item>
+        <item>一周</item>
+        <item>一月</item>
+    </string-array>
+
+    <string-array name="work_load_count_type">
+        <item>个人</item>
+        <item>小组</item>
+        <item>病区</item>
+    </string-array>
+
+    <string-array name="infusionstatus_handexecute_chuanci">
+        <item>病人ID</item>
+        <item>其它</item>
+    </string-array>
+    <string-array name="speed_unit">
+        <item>滴/分</item>
+        <item>毫升/分</item>
+    </string-array>
+    <string-array name="version_name">
+        <item>4.0测试_黄浦</item>
+        <item>5.0测试_国际医学中心</item>
+        <item>上海黄浦中心医院</item>
+        <item>国际医学中心</item>
+    </string-array>
+
+    <string-array name="arround_infusion_type">
+        <item>正常</item>
+        <item>结束</item>
+    </string-array>
+
+    <string-array name="fun_catalog">
+        <item>全部</item>
+        <item>未完成</item>
+        <item>已完成</item>
+    </string-array>
+
+    <string-array name="bottle_fun">
+        <item>输液巡视</item>
+        <item>重新分配座位</item>
+        <item>完成本次输液</item>
+        <item>结束全部输液</item>
+    </string-array>
+
+    <string-array name="call_content">
+        <item>请XXX到门急诊输液药房9号窗口</item>
+        <item>请XXX到登记台…</item>
+        <item>请XXX到穿刺室输液…</item>
+        <item>请XXX到指定座位上等待…</item>
+    </string-array>
+
+    <string-array name="longClick_menu">
+        <item>呼叫</item>
+        <item>打印座位</item>
+    </string-array>
+    <string-array name="check_exitdrug">
+        <item>今日</item>
+        <item>昨天</item>
+        <item>前天</item>
+    </string-array>
+
+    <string-array name="excute_handler_reason">
+        <item>处方错误</item>
+        <item>手动执行</item>
+        <item>其他</item>
+    </string-array>
+
+    <string-array name="around_choose">
+        <item>自己</item>
+        <item>全部</item>
+    </string-array>
+
+    <string-array name="scan_confirm_setting">
+        <item>打开震动</item>
+        <item>打开声音</item>
+        <item>打开震动和声音</item>
+        <item>关闭震动和声音</item>
+    </string-array>
+
+    <string-array name="print_mode">
+        <item>蓝牙打印</item>
+        <item>网络打印</item>
+    </string-array>
+</resources>

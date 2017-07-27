@@ -1,0 +1,87 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/action_bar_height"
+        android:background="@color/action_bar_bg"
+        tools:context=".MainActivity">
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <TextView
+                android:textColor="@color/white"
+                android:text="配液"
+                android:textSize="20sp"
+                android:id="@+id/chuanchi_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/more"
+            android:layout_width="70dp"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/action_more"
+                android:layout_marginRight="15dp"
+                android:textColor="@color/white"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </RelativeLayout>
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/un_complete_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp"
+        >
+    <com.fugao.infusion.view.AnimatedExpandableListView
+        android:id="@+id/listView"
+        android:groupIndicator="@android:color/transparent"
+        android:divider="@android:color/transparent"
+        android:childDivider="@android:color/transparent"
+        android:layout_margin="8dp"
+        android:dividerHeight="8dp"
+        android:scrollbars="none"
+        android:fadingEdge="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</android.support.v4.widget.SwipeRefreshLayout>
+
+    <LinearLayout
+        android:id="@+id/progressContainer"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/c_ebebebeb"
+        android:visibility="gone"
+        android:gravity="center">
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleInverse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/nodata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="没有数据!"
+            android:paddingTop="4dip"
+            android:singleLine="true"/>
+
+    </LinearLayout>
+</LinearLayout>

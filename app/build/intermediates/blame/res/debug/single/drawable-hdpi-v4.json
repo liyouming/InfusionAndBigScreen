@@ -1,0 +1,46 @@
+[
+    {
+        "merged": "F:\\infusioncode\\PhotoUtils\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\douban_icon.xml",
+        "source": "F:\\infusioncode\\PhotoUtils\\app\\src\\main\\res\\drawable-hdpi\\douban_icon.xml"
+    },
+    {
+        "merged": "F:\\infusioncode\\PhotoUtils\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\line_fenge_pink.jpg",
+        "source": "F:\\infusioncode\\PhotoUtils\\app\\src\\main\\res\\drawable-hdpi\\line_fenge_pink.jpg"
+    },
+    {
+        "merged": "F:\\infusioncode\\PhotoUtils\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\renren_icon.xml",
+        "source": "F:\\infusioncode\\PhotoUtils\\app\\src\\main\\res\\drawable-hdpi\\renren_icon.xml"
+    },
+    {
+        "merged": "F:\\infusioncode\\PhotoUtils\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\icon_sign.xml",
+        "source": "F:\\infusioncode\\PhotoUtils\\app\\src\\main\\res\\drawable-hdpi\\icon_sign.xml"
+    },
+    {
+        "merged": "F:\\infusioncode\\PhotoUtils\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\qq_icon.xml",
+        "source": "F:\\infusioncode\\PhotoUtils\\app\\src\\main\\res\\drawable-hdpi\\qq_icon.xml"
+    },
+    {
+        "merged": "F:\\infusioncode\\PhotoUtils\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\title_comit.xml",
+        "source": "F:\\infusioncode\\PhotoUtils\\app\\src\\main\\res\\drawable-hdpi\\title_comit.xml"
+    },
+    {
+        "merged": "F:\\infusioncode\\PhotoUtils\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\tecent_icon.xml",
+        "source": "F:\\infusioncode\\PhotoUtils\\app\\src\\main\\res\\drawable-hdpi\\tecent_icon.xml"
+    },
+    {
+        "merged": "F:\\infusioncode\\PhotoUtils\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\sina_icon.xml",
+        "source": "F:\\infusioncode\\PhotoUtils\\app\\src\\main\\res\\drawable-hdpi\\sina_icon.xml"
+    },
+    {
+        "merged": "F:\\infusioncode\\PhotoUtils\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\qzoon_icon.xml",
+        "source": "F:\\infusioncode\\PhotoUtils\\app\\src\\main\\res\\drawable-hdpi\\qzoon_icon.xml"
+    },
+    {
+        "merged": "F:\\infusioncode\\PhotoUtils\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\camera_icon.xml",
+        "source": "F:\\infusioncode\\PhotoUtils\\app\\src\\main\\res\\drawable-hdpi\\camera_icon.xml"
+    },
+    {
+        "merged": "F:\\infusioncode\\PhotoUtils\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\title_back.xml",
+        "source": "F:\\infusioncode\\PhotoUtils\\app\\src\\main\\res\\drawable-hdpi\\title_back.xml"
+    }
+]

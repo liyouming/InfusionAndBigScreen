@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 2014 loQua.Xee <loquaciouser@gmail.com>
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~    http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<FrameLayout android:gravity="center_vertical" android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+  <LinearLayout android:layout_width="fill_parent"
+      android:layout_height="wrap_content">
+    <TextView android:textSize="18.0sp"
+        android:textColor="@color/darkgray"
+        android:gravity="bottom|center"
+        android:id="@+id/patients_head"
+        android:background="@drawable/patients_man_head"
+        android:paddingBottom="5.0dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="李月华"/>
+    <LinearLayout android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:id="@+id/patients_content"
+        android:background="@drawable/card_selector"
+        android:paddingLeft="10.0dip"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+      <LinearLayout
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal">
+        <TextView android:textSize="21.0sp"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:id="@+id/patient_content_seatno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="001座"/>
+        <TextView android:textSize="17.0sp"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:id="@+id/patient_content_old"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:text="(1岁2个月)"/>
+          <TextView android:textSize="@dimen/patient_content_txt_size"
+                    android:id="@+id/registerDate"
+                    android:textColor="@color/darkgray"
+                    android:layout_weight="1.5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="日期"/>
+      </LinearLayout>
+      <LinearLayout android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="10.0dip">
+        <TextView android:textSize="@dimen/patient_content_txt_size"
+            android:textColor="@color/darkgray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="门诊号："/>
+        <TextView android:textSize="@dimen/patient_content_txt_size"
+            android:textColor="@color/darkgray"
+            android:id="@+id/patient_content_mzh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="201410071430"/>
+        <TextView android:textSize="@dimen/patient_content_txt_size"
+            android:textColor="@color/darkgray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:text="流水号："/>
+        <TextView android:textSize="@dimen/patient_content_txt_size"
+            android:textColor="@color/darkgray"
+            android:id="@+id/patient_content_lsh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="19890918"/>
+      </LinearLayout>
+      <LinearLayout android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="10.0dip">
+        <TextView android:textSize="@dimen/patient_content_txt_size"
+            android:textColor="@color/darkgray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:text="体重："/>
+        <TextView android:textSize="@dimen/patient_content_txt_size"
+            android:textColor="@color/darkgray"
+            android:id="@+id/patient_content_tz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="张美雪"/>
+        <TextView android:textSize="@dimen/patient_content_txt_size"
+            android:id="@+id/patient_text_gms"
+            android:textColor="@color/darkgray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:text="过敏史："/>
+        <TextView android:textSize="@dimen/patient_content_txt_size"
+            android:textColor="@color/holo_red"
+            android:id="@+id/patient_content_gms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="青霉素过敏"/>
+      </LinearLayout>
+    </LinearLayout>
+  </LinearLayout>
+  <ImageView android:layout_gravity="right"
+      android:id="@+id/patients_sign"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:src="@drawable/info_status"/>
+</FrameLayout>

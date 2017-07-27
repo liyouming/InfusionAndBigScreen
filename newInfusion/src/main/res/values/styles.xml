@@ -1,0 +1,142 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Holo.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+
+    <style name="layout_fw_style">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="layout_wf_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+
+    <style name="bottom_menu_sytle">
+        <item name="android:textSize">10.0sp</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">bottom|center_horizontal</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:button">@null</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:checked">false</item>
+    </style>
+
+    <style name="orderCheckboxTheme" parent="@android:style/Widget.CompoundButton.CheckBox">
+
+    </style>
+
+    <style name="text" />
+
+    <style name="text.title" parent="@style/text">
+        <item name="android:textSize">21.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ff000000</item>
+    </style>
+
+    <style name="text.uc_h1" parent="@style/text">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:textColor">#ff666666</item>
+    </style>
+
+    <style name="text.uc_item" parent="@style/text">
+        <item name="android:textSize">17.0sp</item>
+        <item name="android:textColor">#666666</item>
+    </style>
+    <!-- 默认Activity跳转动画 -->
+    <style name="default_animation" mce_bogus="1" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/umeng_fb_slide_in_from_right</item>
+        <item name="android:activityOpenExitAnimation">@anim/umeng_fb_slide_out_from_left</item>
+        <item name="android:activityCloseEnterAnimation">@anim/umeng_fb_slide_in_from_left</item>
+        <item name="android:activityCloseExitAnimation">@anim/umeng_fb_slide_out_from_right</item>
+    </style>
+    <style name="NiuHomeAppTheme" mce_bogus="1" parent="AppTheme">
+        <item name="android:windowAnimationStyle">@style/default_animation</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="numberPickerStyle">@style/NPWidget.Holo.Light.NumberPicker</item>
+        <item name="selectionDivider">@drawable/line</item>
+    </style>
+    <style name="TopShow">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">300dp</item>
+    </style>
+    <style name="TopShow.Sticky">
+        <item name="android:background">@drawable/patients_list_bg</item>
+        <item name="android:layout_height">@dimen/sticky_height</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAppearance">?android:textAppearanceLarge</item>
+    </style>
+    <style name="list_card">
+        <item name="android:paddingLeft">@dimen/list_card_padding_left</item>
+        <item name="android:paddingRight">@dimen/list_card_padding_right</item>
+        <item name="android:paddingBottom">@dimen/list_card_padding_bottom</item>
+        <item name="android:paddingTop">@dimen/list_card_padding_top</item>
+    </style>
+
+    <!--checkBox-->
+    <style name="CustomCheckboxTheme" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/checkbox_style</item>
+    </style>
+
+    <style name="BigCustomCheckboxTheme" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/big_checkbox_style</item>
+    </style>
+
+    <!--dialog-->
+    <style name="theme_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+    <style name="text.uc_title" parent="@style/text">
+        <item name="android:textSize">17.0sp</item>
+        <item name="android:textColor">@color/orange</item>
+    </style>
+
+    <style name="setting_style" parent="android:Theme.Holo.Light">
+    </style>
+    <!--退出程序dialog-->
+    <style name="Dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowTitleStyle">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:background">#00ffffff</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/dialogbg</item>
+    </style>
+    <style name="DialogText.Title">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="DialogText">
+        <item name="android:textColor">#FF000000</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <!-- 进入设置界面的dialog-->
+    <style name="Theme.HalfTranslucent" parent="@android:style/Theme.Translucent">
+        <item name="android:windowBackground">@color/half_transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@style/Animation.Translucent</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="Animation"/>
+    <style name="Animation.Translucent" parent="@style/Animation">
+        <item name="android:windowEnterAnimation">@anim/translucent_zoom_out</item>
+        <item name="android:windowExitAnimation">@anim/translucent_zoom_exit</item>
+    </style>
+</resources>

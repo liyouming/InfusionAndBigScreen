@@ -1,0 +1,189 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/action_bar_height"
+        android:background="@color/action_bar_bg"
+        tools:context=".MainActivity">
+
+        <!--<TextView-->
+            <!--android:id="@+id/title_text_view"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:drawableLeft="@drawable/customer_actionbar_back"-->
+            <!--android:gravity="center"-->
+            <!--android:textSize="18sp"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:layout_height="match_parent" />-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:gravity="center_vertical"
+            android:text="更多"
+            android:textSize="20sp"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/white"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#ffeeeeee"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/linearlayout_user_main_scroll_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:id="@+id/contentNormal"
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dip"
+                android:background="@drawable/card_selector">
+
+                <ImageView
+                    android:id="@+id/cbGm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="25.0dip"
+                    android:background="@drawable/uc_feedback_ic"
+                    android:contentDescription="@null"/>
+
+                <TextView
+                    android:id="@+id/tvGm"
+                    style="@style/text.uc_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20.0dip"
+                    android:layout_toRightOf="@id/cbGm"
+                    android:text="切换功能"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="18.0dip"
+                    android:background="@drawable/uc_arrow_right"
+                    android:contentDescription="@null"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:id="@+id/contentSpeed"
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dip"
+                android:background="@drawable/card_selector">
+
+                <ImageView
+                    android:id="@+id/cbPf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="25.0dip"
+                    android:layout_marginRight="6dp"
+                    android:background="@drawable/uc_user_ic"
+                    android:contentDescription="@null"/>
+
+                <TextView
+                    android:id="@+id/tvPf"
+                    style="@style/text.uc_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20.0dip"
+                    android:layout_toRightOf="@id/cbPf"
+                    android:text="切换病区"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="18.0dip"
+                    android:background="@drawable/uc_arrow_right"
+                    android:contentDescription="@null"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:id="@+id/contentSetting"
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dip"
+                android:background="@drawable/card_selector">
+
+                <ImageView
+                    android:id="@+id/iv_restart_wifi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="25.0dip"
+                    android:background="@drawable/uc_read_history_ic"
+                    android:contentDescription="@null"/>
+
+                <TextView
+                    android:id="@+id/tv_restart_wifi"
+                    style="@style/text.uc_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20.0dip"
+                    android:layout_toRightOf="@id/iv_restart_wifi"
+                    android:text="系统设置"/>l
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="18.0dip"
+                    android:background="@drawable/uc_arrow_right"
+                    android:contentDescription="@null"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_marginTop="20dp"
+                android:layout_width="fill_parent"
+                android:layout_height="1.0px"
+                android:background="@color/mid_divider"/>
+
+            <Button
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="80dp"
+                android:id="@+id/btnLogout"
+                android:layout_width="match_parent"
+                android:layout_height="42dip"
+                android:layout_weight="1"
+                android:background="@drawable/fugao_light_bg"
+                android:gravity="center"
+                android:text="注    销"
+                android:textColor="@color/white"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+    </ScrollView>
+    </LinearLayout>

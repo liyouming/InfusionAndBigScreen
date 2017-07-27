@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ Copyright (C) 2014 loQua.Xee <loquaciouser@gmail.com>
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~    http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<android.support.v4.widget.SwipeRefreshLayout
+    android:id="@+id/un_complete_refresh_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c_ebebebeb"
+    android:padding="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+  <ListView
+      android:id="@+id/listView"
+      android:layout_marginTop="8dp"
+      android:layout_marginBottom="8dp"
+      android:divider="@null"
+      android:scrollbars="none"
+      android:dividerHeight="8dp"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"/>
+
+  <LinearLayout
+      android:id="@+id/progressContainer"
+      android:orientation="vertical"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:visibility="gone"
+      android:gravity="center">
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleInverse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/nodata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="没有数据!"
+        android:paddingTop="4dip"
+        android:singleLine="true"/>
+
+  </LinearLayout>
+
+  <!--<ProgressBar-->
+  <!--android:id="@+id/progress_fragment_node"-->
+  <!--android:layout_width="wrap_content"-->
+  <!--android:layout_height="wrap_content"-->
+  <!--android:layout_gravity="center"-->
+  <!--android:visibility="gone"-->
+  <!--/>-->
+
+    </android.support.v4.widget.SwipeRefreshLayout>

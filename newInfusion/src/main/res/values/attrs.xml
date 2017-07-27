@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2011 Patrik Åkerfeldt
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+  
+          http://www.apache.org/licenses/LICENSE-2.0
+  
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources>
+    <declare-styleable name="ViewFlow">
+        <attr name="viewflow_sidebuffer" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="CircleFlowIndicator">
+        <attr name="viewflow_activeColor" format="color" />
+        <attr name="viewflow_inactiveColor" format="color" />
+        <attr name="viewflow_radius" format="dimension" />
+		<attr name="viewflow_centered" format="boolean" />
+		<attr name="viewflow_fadeOut" format="integer" />
+		<attr name="viewflow_inactiveType">
+			<flag name="stroke" value="0" />
+			<flag name="fill" value="1" />
+		</attr>
+		<attr name="viewflow_activeType">
+			<flag name="stroke" value="0" />
+			<flag name="fill" value="1" />
+		</attr>
+		<attr name="viewflow_circleSeparation" format="dimension" />
+		<attr name="viewflow_activeRadius" format="dimension" />
+    </declare-styleable>
+
+
+    <declare-styleable name="TabWidget">
+        <attr name="bottom_labels" format="reference" />
+    </declare-styleable>
+
+
+    <!--progressButton-->
+    <declare-styleable name="ProcessButton">
+        <attr name="pb_textProgress" format="string"/>
+        <attr name="pb_textComplete" format="string"/>
+        <attr name="pb_textError" format="string"/>
+        <attr name="pb_colorProgress" format="color"/>
+        <attr name="pb_colorComplete" format="color"/>
+        <attr name="pb_colorError" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="FlatButton">
+        <attr name="pb_colorPressed" format="color"/>
+        <attr name="pb_colorNormal" format="color"/>
+        <attr name="pb_colorEnable" format="color"/>
+        <attr name="pb_cornerRadius" format="dimension"/>
+        <attr name="pb_normalDrawable" format="reference"/>
+    </declare-styleable>
+    <!--MarqueueView-->
+    <declare-styleable name="asia.ivity.android.marqueeview.MarqueeView">
+        <attr name="speed" format="integer"/>
+        <attr name="pause" format="integer"/>
+        <attr name="autoStart" format="boolean"/>
+    </declare-styleable>
+
+</resources>

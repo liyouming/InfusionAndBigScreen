@@ -1,0 +1,397 @@
+<!--
+  ~ Copyright (C) 2014 loQua.Xee <loquaciouser@gmail.com>
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~    http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/action_bar_height"
+        android:background="@color/action_bar_bg"
+        >
+
+        <TextView
+            android:text="操作"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/title_text_view"
+            android:layout_width="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:drawableLeft="@drawable/customer_actionbar_back"
+            android:gravity="center"
+            android:textSize="19sp"
+            android:textColor="@color/white"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+  <LinearLayout
+      android:layout_below="@id/relative"
+      android:layout_width="match_parent"
+      android:paddingTop="6dp"
+      android:paddingLeft="8dp"
+      android:paddingRight="8dp"
+      android:id="@+id/topLayout"
+      style="@style/TopShow.Sticky"
+      android:layout_height="40dp">
+    <!--<ImageView android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:src="@drawable/send_dark"/>-->
+    <!--<com.android.fastlibrary.view.MarqueeView
+        android:id="@+id/marqViewPatient"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        >-->
+      <TextView
+          android:id="@+id/leftInfo"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textColor="@color/round_selected"
+          android:textSize="@dimen/topInfo"
+          android:gravity="center_vertical"
+          android:text="textview"/>
+    <!--</com.android.fastlibrary.view.MarqueeView>-->
+    <TextView
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:id="@+id/rightInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:textColor="@color/holo_red"
+        android:text=""/>
+  </LinearLayout>
+
+  <ScrollView
+      android:layout_below="@+id/topLayout"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:background="#ffeeeeee"
+      android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="14dp"
+        android:id="@+id/linearlayout_user_main_scroll_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+      <LinearLayout android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="8dp"
+          android:layout_marginBottom="8dp"
+          android:background="@drawable/card_selector"
+          android:orientation="vertical">
+       <!-- <com.android.fastlibrary.view.MarqueeView
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingBottom="4dp"
+            android:id="@+id/marqViewDrug"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@color/c_ebebebeb"
+            android:layout_weight="1"
+            >-->
+          <TextView
+              android:id="@+id/drugInfo"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:textColor="@color/holo_red"
+              android:textSize="@dimen/topInfo"
+              android:text="textview"/>
+        <!--</com.android.fastlibrary.view.MarqueeView>-->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/item_divider_color"/>
+
+        <ListView
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            style="@style/list_card"
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:dividerHeight="0dp"
+            android:scrollbars="none"
+            android:minHeight="120dp"
+            android:background="@drawable/card_background"
+            android:listSelector="@android:color/transparent"
+            android:divider="@android:color/transparent"/>
+      </LinearLayout>
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          style="@style/text.uc_title"
+          android:layout_marginLeft="8dp"
+          android:layout_marginRight="8dp"
+          android:text="输液巡视"/>
+
+      <LinearLayout android:layout_width="match_parent"
+          android:orientation="vertical"
+          android:layout_margin="8dp"
+          android:background="@drawable/patients_list_bg"
+          android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginLeft="4dp"
+            android:id="@+id/contentNormal"
+            android:layout_width="fill_parent"
+            android:layout_height="40.0dip">
+
+          <CheckBox
+              android:id="@+id/cbNormal"
+              android:layout_centerVertical="true"
+              android:layout_marginLeft="25.0dip"
+              style="@style/CustomCheckboxTheme"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:clickable="true"/>
+
+          <TextView
+              android:id="@+id/tvNormal"
+              style="@style/text.uc_item"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_centerVertical="true"
+              android:layout_marginLeft="10.0dip"
+              android:layout_toRightOf="@id/cbNormal"
+              android:text="输液正常"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:background="@color/c_ebebebeb"/>
+
+        <RelativeLayout
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:id="@+id/contentSpeed"
+            android:layout_width="fill_parent"
+            android:layout_height="40.0dip">
+
+          <CheckBox
+              android:id="@+id/cbSpeed"
+              android:layout_centerVertical="true"
+              android:layout_marginLeft="25.0dip"
+              style="@style/CustomCheckboxTheme"
+              android:checked="false"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:clickable="false"/>
+
+          <TextView
+              android:id="@+id/tvSpeed"
+              style="@style/text.uc_item"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_centerVertical="true"
+              android:layout_marginLeft="10.0dip"
+              android:layout_toRightOf="@id/cbSpeed"
+              android:text="修改滴速"/>
+
+          <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_centerVertical="true"
+              android:layout_alignParentRight="true"
+              android:layout_marginRight="10dp"
+              android:textSize="16sp"
+              android:id="@+id/txUnit"
+              />
+
+          <EditText
+              android:minWidth="60dp"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_centerVertical="true"
+              android:text=""
+              android:layout_toRightOf="@+id/tvSpeed"
+              android:id="@+id/etSpeed"
+              android:enabled="false"
+              android:layout_marginRight="10dp"
+              android:textSize="16sp"
+              android:layout_toLeftOf="@+id/txUnit"
+              />
+
+        </RelativeLayout>
+
+        <View
+            android:paddingTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/c_ebebebeb"/>
+
+        <com.fugao.infusion.view.processbutton.iml.ActionProcessButton
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/btnArround"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/default_btn_size"
+            android:enabled="true"
+            android:text="确 定"
+            android:textColor="@color/notes_color"
+            android:textSize="16sp"
+            custom:pb_colorComplete="@color/green_complete"
+            custom:pb_colorNormal="@color/black"
+            custom:pb_colorPressed="@color/weibo_theme_backgourd"
+            custom:pb_colorProgress="@color/purple_progress"
+            custom:pb_textComplete="@string/done"
+            custom:pb_normalDrawable="@drawable/card_background"
+            custom:pb_textProgress="@string/doing"
+            />
+
+      </LinearLayout>
+
+      <TextView
+          android:id="@+id/op"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          style="@style/text.uc_title"
+          android:layout_marginLeft="8dp"
+          android:layout_marginRight="8dp"
+          android:text="异常现象"/>
+
+      <LinearLayout android:layout_width="match_parent"
+          android:orientation="vertical"
+          android:layout_margin="8dp"
+          android:id="@+id/lll"
+          android:background="@drawable/patients_list_bg"
+          android:layout_height="wrap_content">
+
+        <com.fugao.infusion.view.ComboBox
+            android:id="@+id/cboReason"
+            android:layout_toRightOf="@+id/tvOther"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"/>
+
+        <View
+            android:paddingTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/c_ebebebeb"/>
+
+
+        <com.fugao.infusion.view.processbutton.iml.ActionProcessButton
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/btnException"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/default_btn_size"
+            android:enabled="true"
+            android:text="确 定"
+            android:textColor="@color/notes_color"
+            android:textSize="16sp"
+            custom:pb_colorComplete="@color/green_complete"
+            custom:pb_colorNormal="@color/black"
+            custom:pb_colorPressed="@color/weibo_theme_backgourd"
+            custom:pb_colorProgress="@color/purple_progress"
+            custom:pb_textComplete="@string/done"
+            custom:pb_normalDrawable="@drawable/card_background"
+            custom:pb_textProgress="@string/doing"
+            />
+
+      </LinearLayout>
+
+      <TextView
+          android:id="@+id/opOther"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          style="@style/text.uc_title"
+          android:layout_marginLeft="8dp"
+          android:layout_marginRight="8dp"
+          android:text="其它操作"/>
+
+      <LinearLayout android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginBottom="40dp"
+          android:orientation="vertical">
+
+        <com.fugao.infusion.view.processbutton.iml.ActionProcessButton
+            android:layout_margin="8dp"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/btnAllotSeat"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/default_btn_size"
+            android:enabled="true"
+            android:text="重新分配座位"
+            android:textColor="@color/notes_color"
+            android:textSize="16sp"
+            custom:pb_colorComplete="@color/green_complete"
+            custom:pb_colorNormal="@color/blue_normal"
+            custom:pb_colorPressed="@color/weibo_theme_backgourd"
+            custom:pb_colorProgress="@color/purple_progress"
+            custom:pb_textComplete="@string/done"
+            custom:pb_textProgress="@string/doing"
+            custom:pb_normalDrawable="@drawable/card_background"
+            />
+
+        <com.fugao.infusion.view.processbutton.iml.ActionProcessButton
+            android:layout_margin="8dp"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/btnFinish"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/default_btn_size"
+            android:enabled="true"
+            android:text="完成本次输液"
+            android:textColor="@color/notes_color"
+            android:textSize="16sp"
+            custom:pb_colorComplete="@color/green_complete"
+            custom:pb_colorNormal="@color/blue_normal"
+            custom:pb_colorPressed="@color/weibo_theme_backgourd"
+            custom:pb_colorProgress="@color/purple_progress"
+            custom:pb_textComplete="@string/done"
+            custom:pb_textProgress="@string/doing"
+            custom:pb_normalDrawable="@drawable/card_background"
+            />
+
+        <com.fugao.infusion.view.processbutton.iml.ActionProcessButton
+            android:layout_margin="8dp"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/btnGameOver"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/default_btn_size"
+            android:enabled="true"
+            android:text="结束全部输液"
+            android:textColor="@color/notes_color"
+            android:textSize="16sp"
+            custom:pb_colorComplete="@color/green_complete"
+            custom:pb_colorNormal="@color/blue_normal"
+            custom:pb_colorPressed="@color/weibo_theme_backgourd"
+            custom:pb_colorProgress="@color/purple_progress"
+            custom:pb_textComplete="@string/done"
+            custom:pb_textProgress="@string/doing"
+            custom:pb_normalDrawable="@drawable/card_background"
+            />
+      </LinearLayout>
+
+    </LinearLayout>
+  </ScrollView>
+</RelativeLayout>

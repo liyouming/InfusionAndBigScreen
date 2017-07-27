@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/action_bar_height"
+        android:background="@color/action_bar_bg"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/title_text_view"
+            android:layout_width="40dp"
+            android:layout_marginLeft="8dp"
+            android:layout_alignParentLeft="true"
+            android:drawableLeft="@drawable/infusion_back_selector"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="蓝牙设备列表"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/un_complete_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp"
+        >
+    <ListView
+        android:id="@+id/bluetooth_device_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    </ListView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

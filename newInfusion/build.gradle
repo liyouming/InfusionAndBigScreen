@@ -1,0 +1,81 @@
+apply plugin: 'com.android.application'
+android {
+    signingConfigs {
+        infusion {
+            keyAlias 'fugao'
+            keyPassword '12345678'
+            storeFile file('D:\\fugaoApp\\FugaoApps\\0Developer_Doc\\key\\new_infusion')
+            storePassword '12345678'
+        }
+    }
+    compileSdkVersion 19
+    buildToolsVersion "21.1.1"
+    defaultConfig {
+        applicationId "com.fugao.infusion"
+        minSdkVersion 13
+        targetSdkVersion 19
+        versionCode 54
+        versionName "v1.0"
+        manifestPlaceholders = [FUGAO_CHANNEL_VALUE: "default_channel"]
+    }
+    buildTypes {
+        release {
+            //混淆
+//            minifyEnabled true
+//            //zipAlignEnabled 优化
+//            zipAlignEnabled true
+//            //移除无用的resource文件
+//            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+        }
+    }
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES.txt'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/dependencies.txt'
+        exclude 'META-INF/LGPL2.1'
+        exclude 'META-INF/INDEX.LIST'
+    }
+    productFlavors {
+
+        fugao {}
+        ekyy {}
+    }
+
+    productFlavors.all { flavor ->
+        flavor.manifestPlaceholders = [FUGAO_CHANNEL_VALUE: name]
+    }
+
+    applicationVariants.all { variant ->
+
+        variant.outputs.each { output ->
+            def outputFile = output.outputFile
+            if (outputFile != null && outputFile.name.endsWith('.apk')) {
+                def fileName = outputFile.name.replace(".apk", "-${defaultConfig.versionName}.apk")
+                output.outputFile = new File(outputFile.parent, fileName)
+            }
+        }
+    }
+
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
+    dependencies {
+        compile fileTree(include: ['*.jar'], dir: 'libs')
+        compile(name: 'base-release', ext: 'aar')
+        compile files('libs/honeywell.jar')
+    }
+}
+
+dependencies {
+    compile files('libs/afinal_0.5_bin.jar')
+}

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 暗灰色 -->
+    <color name="welcome_bg">#028aa5</color>
+    <color name="transparent">#00000000</color>
+    <color name="black">#ff646464</color>
+    <color name="app_bg">#eeeeee</color>
+    <color name="white">#ffffffff</color>
+    <color name="tab_item_default">#fafafa</color>
+    <color name="tab_item_selected">#f0f1f2</color>
+    <color name="tab_text_selected">#f8597c</color>
+    <color name="tab_text_default">#bbbbbb</color>
+    <color name="background_color">#fbfbfb</color>
+    <color name="title_text_color">#ffffff</color>
+
+    <!-- 透明色 -->
+    <color name="fuxk_settle_black_mark">#1A000000</color>
+
+    <!-- 分割线 -->
+    <color name="fuxk_base_divide_line_color">#dcdcdc</color>
+    <color name="action_bar_bg">#019eff</color>
+    <color name="blue_normal">#ff33b5e5</color>
+    <color name="action_bar_text_color">#111111</color>
+    <color name="bottom_bg">#ebeff0</color>
+    <color name="detail_tabindictor">#FF3F9FE0</color>
+    <color name="detail_tabindictor_order">#a2c83a</color>
+    <color name="layout_order_bg">#FFFFFF</color>
+    <color name="order_divide_line">#EBEBEB</color>
+    <color name="order_text_color">#a2c83a</color>
+    <color name="card_activated">#CFE9F3</color>
+    <color name="card_pressed">#7E0099CC</color>
+    <drawable name="tab_dibu_bg_drawable">#FFFFFF</drawable>
+    <color name="fugao_default_theme_color">#019eff</color>
+    <color name="fugao_btn_click_color">#0068ff</color>
+    <color name="item_pressed_color_transparent">#19000000</color>
+    <color name="c_ffd7b65d">#ffd7b65d</color>
+    <color name="c_ff7800">#ffff7800</color>
+    <color name="c_ffababab">#ffababab</color>
+    <color name="c_cccccc">#CCCCCC</color>
+    <color name="holo_red">#FF4444</color>
+    <color name="c_ebebebeb">#EBEBEB</color>
+    <color name="darkgray">#ff808080</color>
+    <color name="round_selected">#ff555555</color>
+    <color name="dark_gray">#ff999999</color>
+
+    <color name="holo_blue_bright">#ff00ddff</color>
+    <color name="holo_green_light">#ff99cc00</color>
+    <color name="holo_orange_light">#ffffbb33</color>
+    <color name="holo_red_light">#ffff4444</color>
+
+    <color name="holo_yellow">#FFBB33</color>
+    <color name="holo_orange">#FF8800</color>
+    <color name="blue_pressed">#0068ff</color>
+
+    <color name="green_complete">#ff99cc00</color>
+    <color name="purple_progress">#ffaa66cc</color>
+    <color name="red_error">#ffff4444</color>
+    <color name="c_c0d1dd">#C0D1DD</color>
+    <color name="c_ff555555">#ff555555</color>
+
+    <color name="item_theme_color">#019eff</color>
+    <color name="item_divider_color">#ffededed</color>
+    <color name="doctor_background_tab_pressed">#6633B5E5</color>
+    <color name="notes_color">#ff777777</color>
+    <color name="weibo_theme_backgourd">#33B5E5</color>
+    <color name="light_grey">#e0e0e0</color>
+    <color name="light_medium_grey">#c7c7c7</color>
+    <color name="dark_medium_grey">#606060</color>
+    <color name="dark_grey">#3e3e3e</color>
+    <color name="holo_red2">#CC0000</color>
+
+    <color name="holo_blue">#33B5E5</color>
+    <color name="holo_blue2">#0099CC</color>
+
+    <color name="holo_green">#99CC00</color>
+    <color name="holo_green2">#669900</color>
+
+    <color name="holo_purple">#AA66CC</color>
+    <color name="holo_purple2">#9933CC</color>
+    <color name="actionbar_text">#ffffff</color>
+    <color name="c_eeeeeeee">#eeeeeeee</color>
+
+    <color name="half_transparent">#aa000000</color>
+</resources>

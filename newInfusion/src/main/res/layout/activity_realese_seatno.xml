@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#C1C7C0"
+              android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/action_bar_height"
+        android:background="@color/action_bar_bg"
+        >
+
+        <TextView
+            android:text="座位"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/title_text_view"
+            android:layout_width="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:textSize="19sp"
+            android:textColor="@color/white"
+            android:layout_height="match_parent" />
+
+        <Spinner
+            android:id="@+id/realeseseat_spinner"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/title_text_view"
+            android:layout_marginLeft="140dp"
+           >
+
+            </Spinner>
+        <LinearLayout
+            android:layout_width="110dp"
+            android:gravity="center"
+            android:visibility="gone"
+            android:layout_alignParentRight="true"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/fujiao"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <include
+                    android:layout_toLeftOf="@+id/shuaxin"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="wrap_content"
+                    layout="@layout/menu_badge"
+                    />
+                </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/shuaxin"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_refresh"
+                    android:layout_marginRight="15dp"
+                    android:textColor="@color/white"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.0px"
+        android:background="@color/top_divider"/>
+    <android.support.v4.widget.SwipeRefreshLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:background="@color/c_ebebebeb"
+        android:id="@+id/un_complete_refresh_layout"
+        android:layout_height="match_parent">
+    <GridView
+        android:id="@+id/gridView"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="10dip"
+        android:layout_height="fill_parent"
+        android:numColumns="4"
+        android:padding="4dp"
+        android:verticalSpacing="5dp"
+        android:horizontalSpacing="20dp"
+        android:columnWidth="90dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center">
+    </GridView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

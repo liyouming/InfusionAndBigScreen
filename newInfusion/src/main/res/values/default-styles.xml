@@ -1,0 +1,44 @@
+<!--
+  ~ Copyright © 2014 上海复高计算机科技有限公司. All rights reserved.
+  -->
+
+<resources>
+  <!--主界面RadioButton样式-->
+  <style name="radioButton">
+    <item name="android:layout_width">100dp</item>
+    <item name="android:layout_height">fill_parent</item>
+    <item name="android:layout_weight">1.0</item>
+    <item name="android:padding">0dp</item>
+    <item name="android:textSize">12dp</item>
+    <item name="android:gravity">center</item>
+    <item name="android:button">@null</item>
+  </style>
+
+    <!-- Base application theme. -->
+    <style name="BaseTheme" parent="android:Theme.Holo.Light">
+    </style>
+    <!-- 系统默认主题DefualtTheme -->
+    <style name="DefualtTheme" parent="BaseTheme">
+        <item name="vpiTabPageIndicatorStyle">@style/DefaultTabPageIndicator</item>
+    </style>
+
+
+  <!--导航条TabPageIndicator-->
+  <style name="DefaultTabPageIndicator" parent="Widget.TabPageIndicator">
+    <item name="android:background">@drawable/default_tab_indicator2</item>
+    <item name="android:textAppearance">@style/DefaultTabPageIndicator.Text</item>
+    <item name="android:textSize">16sp</item>
+    <item name="android:dividerPadding">10dp</item>
+    <item name="android:showDividers">middle</item>
+    <item name="android:paddingLeft">10dp</item>
+    <item name="android:paddingRight">10dp</item>
+    <item name="android:fadingEdge">horizontal</item>
+    <item name="android:fadingEdgeLength">8dp</item>
+  </style>
+
+  <style name="DefaultTabPageIndicator.Text" parent="android:TextAppearance.Medium">
+    <item name="android:typeface">monospace</item>
+    <item name="android:textColor">@drawable/selector_tabtext</item>
+  </style>
+
+</resources>

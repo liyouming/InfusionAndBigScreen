@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 2014 loQua.Xee <loquaciouser@gmail.com>
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~    http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<changelog>
+
+
+  <release
+      version=" 1.0"
+      versioncode="1">
+    <change>1.新增配置界面关于软件</change>
+    <change>2.修改输液执行界面</change>
+    <change>3.取消配液和穿刺本地数据库的保存</change>
+    <change>4.修改配液、穿刺和输液的bug</change>
+  </release>
+
+  <release
+      version=" 2.0"
+      versioncode="2">
+    <change>1.设置输液进度条</change>
+    <change>2.增加轮询呼叫时定时刷新</change>
+    <change>3.增加呼叫列表及PDA扫描</change>
+    <change>4.设置距离呼叫过去时间</change>
+  </release>
+
+  <release
+      version=" 3.0"
+      versioncode="3">
+    <change>1.修改RestClient并用VolleyHelper代替</change>
+    <change>2.增加DynamicBox设置无网络和断网情况</change>
+    <change>3.输液完成设置座位分配</change>
+    <change>4.增加输液工作量的统计</change>
+  </release>
+
+</changelog>

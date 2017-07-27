@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="honeywell">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/newInfusion/libs/honeywell.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

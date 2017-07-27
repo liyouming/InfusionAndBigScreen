@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "F:\\infusioncode\\PhotoUtils\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_sos.xml",
+        "source": "F:\\infusioncode\\PhotoUtils\\app\\src\\main\\res\\layout\\activity_sos.xml"
+    },
+    {
+        "merged": "F:\\infusioncode\\PhotoUtils\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dialog.xml",
+        "source": "F:\\infusioncode\\PhotoUtils\\app\\src\\main\\res\\layout\\dialog.xml"
+    },
+    {
+        "merged": "F:\\infusioncode\\PhotoUtils\\app\\build\\intermediates\\res\\merged\\debug\\layout\\test_activity.xml",
+        "source": "F:\\infusioncode\\PhotoUtils\\app\\src\\main\\res\\layout\\test_activity.xml"
+    },
+    {
+        "merged": "F:\\infusioncode\\PhotoUtils\\app\\build\\intermediates\\res\\merged\\debug\\layout\\main_activity.xml",
+        "source": "F:\\infusioncode\\PhotoUtils\\app\\src\\main\\res\\layout\\main_activity.xml"
+    },
+    {
+        "merged": "F:\\infusioncode\\PhotoUtils\\app\\build\\intermediates\\res\\merged\\debug\\layout\\phototest_layout.xml",
+        "source": "F:\\infusioncode\\PhotoUtils\\app\\src\\main\\res\\layout\\phototest_layout.xml"
+    }
+]

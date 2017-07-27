@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright (C) 2014 loQua.Xee <loquaciouser@gmail.com>
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~    http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+
+<modules>
+    <module id="ip">10.0.5.23</module>
+    <module id="port">8007</module>
+    <module id="hospital">zzey</module>
+    <!--首页，统计，座位，更多-->
+    <module id="main_menu">列表,巡视,统计,更多</module>
+    <!--重症急诊留观室的-->
+    <module id="zhongji_main_menu">输液巡视,穿刺,座位,巡视,更多</module>
+    <!-- 排药是否启用批量扫描 1为启用-->
+    <module id="batchScan_paiyao">1</module>
+    <!-- 配液是否启用批量扫描 1为启用-->
+    <module id="batchScan_peiye">0</module>
+    <!-- 医嘱执行是否自动结束上一把 1为启用-->
+    <module id="autoEndOthers">1</module>
+    <!-- 穿刺护士呼叫最大次数-->
+    <module id="callMaxCount">3</module>
+    <!-- 是否自动分配座位 1为自动分配-->
+    <module id="autoAllotSeat">0</module>
+    <!-- 是否启用配液 0为不启用-->
+    <module id="canPeiye">0</module>
+    <!-- 扫描核对错误时的设置提醒-->
+    <module id="comfirmErrorSetting">打开震动,打开声音,打开震动和声音,关闭震动和声音</module>
+    <module id="license">郑州儿童医院</module>
+    <module id="system_desc">移动输液系统，进行排药、配液、穿刺和巡视提高数据的精确性，方便护士对患者进行输液</module>
+    <!--是否启用加载数据  true启用  false不启用-->
+    <module id="startLoadDate">true</module>
+    <module id="ssid">xxzx</module>
+    <module id="password">19831984</module>
+    <module id="wife_type">3</module>
+    <!--是否开启扫描头-->
+    <module id="integration_scan">true</module>
+    <!--进入设置界面需要管理员的用户名和密码进行登录，才能修改设置界面的内容-->
+    <module id="local_username">0000</module>
+    <module id="local_password">1</module>
+    <!--<module id="local_password">1</module>-->
+</modules>

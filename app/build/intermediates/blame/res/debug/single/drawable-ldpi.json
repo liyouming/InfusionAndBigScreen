@@ -1,0 +1,38 @@
+[
+    {
+        "merged": "F:\\infusioncode\\PhotoUtils\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi\\icon_carme.png",
+        "source": "F:\\infusioncode\\PhotoUtils\\app\\src\\main\\res\\drawable-ldpi\\icon_carme.png"
+    },
+    {
+        "merged": "F:\\infusioncode\\PhotoUtils\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi\\btn_top.png",
+        "source": "F:\\infusioncode\\PhotoUtils\\app\\src\\main\\res\\drawable-ldpi\\btn_top.png"
+    },
+    {
+        "merged": "F:\\infusioncode\\PhotoUtils\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi\\btn_m_selected.png",
+        "source": "F:\\infusioncode\\PhotoUtils\\app\\src\\main\\res\\drawable-ldpi\\btn_m_selected.png"
+    },
+    {
+        "merged": "F:\\infusioncode\\PhotoUtils\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi\\icon_carme_selected.png",
+        "source": "F:\\infusioncode\\PhotoUtils\\app\\src\\main\\res\\drawable-ldpi\\icon_carme_selected.png"
+    },
+    {
+        "merged": "F:\\infusioncode\\PhotoUtils\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi\\btn_top_selected.png",
+        "source": "F:\\infusioncode\\PhotoUtils\\app\\src\\main\\res\\drawable-ldpi\\btn_top_selected.png"
+    },
+    {
+        "merged": "F:\\infusioncode\\PhotoUtils\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi\\btn_back_top_selected.png",
+        "source": "F:\\infusioncode\\PhotoUtils\\app\\src\\main\\res\\drawable-ldpi\\btn_back_top_selected.png"
+    },
+    {
+        "merged": "F:\\infusioncode\\PhotoUtils\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi\\table_qiandao_text.png",
+        "source": "F:\\infusioncode\\PhotoUtils\\app\\src\\main\\res\\drawable-ldpi\\table_qiandao_text.png"
+    },
+    {
+        "merged": "F:\\infusioncode\\PhotoUtils\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi\\btn_m.png",
+        "source": "F:\\infusioncode\\PhotoUtils\\app\\src\\main\\res\\drawable-ldpi\\btn_m.png"
+    },
+    {
+        "merged": "F:\\infusioncode\\PhotoUtils\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi\\btn_back_top.png",
+        "source": "F:\\infusioncode\\PhotoUtils\\app\\src\\main\\res\\drawable-ldpi\\btn_back_top.png"
+    }
+]

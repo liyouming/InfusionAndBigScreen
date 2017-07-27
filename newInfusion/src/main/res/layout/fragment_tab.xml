@@ -1,0 +1,98 @@
+<!--
+  ~ Copyright (C) 2014 loQua.Xee <loquaciouser@gmail.com>
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~    http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/action_bar_height"
+        android:background="@color/action_bar_bg">
+
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:textColor="@color/white"
+                android:text="工作量"
+                android:gravity="center_vertical"
+                android:textSize="17sp"
+                android:id="@+id/chuanchi_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--<com.fugao.infusion.view.viewpagerindicator.TabPageIndicator-->
+        <!--android:id="@+id/indicator"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:layout_height="45dp"-->
+        <!--android:background="@drawable/patients_list_bg"/>-->
+
+        <!--<View-->
+        <!--android:layout_height="1.0px"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:background="@color/top_divider"/>-->
+
+        <!--<android.support.v4.view.ViewPager-->
+        <!--android:id="@+id/pager"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_weight="1"/>-->
+
+        <View
+            android:layout_height="1.0px"
+            android:layout_width="fill_parent"
+            android:background="@color/top_divider"/>
+
+        <com.jasonchen.base.view.PagerSlidingTabStrip
+            android:layout_height="48dip"
+            android:layout_width="match_parent"
+            android:background="@android:color/white"
+            app:pstsTabBackground="@drawable/doctor_background_tab"
+            app:pstsDividerColor="@android:color/transparent"
+            app:selectedTabTextColor="@android:color/holo_blue_light"
+            app:pstsIndicatorColor="@android:color/holo_blue_light"
+            app:pstsIndicatorHeight="2dp"
+            app:pstsUnderlineHeight="2dp"
+            app:pstsShouldExpand="true"
+            android:id="@+id/tabs"/>
+
+        <android.support.v4.view.ViewPager
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/pager"
+            android:layout_below="@+id/tabs"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

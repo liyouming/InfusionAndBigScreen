@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/PhotoUtils.iml" filepath="$PROJECT_DIR$/PhotoUtils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bigscreen/bigscreen.iml" filepath="$PROJECT_DIR$/bigscreen/bigscreen.iml" />
+      <module fileurl="file://$PROJECT_DIR$/newInfusion/newInfusion.iml" filepath="$PROJECT_DIR$/newInfusion/newInfusion.iml" />
+      <module fileurl="file://$PROJECT_DIR$/newbigscreen/newbigscreen.iml" filepath="$PROJECT_DIR$/newbigscreen/newbigscreen.iml" />
+    </modules>
+  </component>
+</project>

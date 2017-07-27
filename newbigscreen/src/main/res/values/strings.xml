@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">大屏呼叫</string>
+    <string name="call_string">请135号\n到1号台穿刺</string>
+    <string-array name="seats_string">
+        <item>+07座</item>
+        <item>+01座</item>
+        <item>103座</item>
+        <item>105座</item>
+        <item>108座</item>
+        <item>122座</item>
+        <item>133座</item>
+        <item>121座</item>
+        <item>115座</item>
+    </string-array>
+    <string-array name="names_string">
+        <item>高迪</item>
+        <item>陈昕艺</item>
+        <item>周海涛</item>
+        <item>钱伟</item>
+        <item>习俊博</item>
+        <item>施萱萱</item>
+        <item>王俊逸</item>
+        <item>吴宗宪</item>
+        <item>吴国新</item>
+        <item>顾晓妍</item>
+        <item>张嘉译</item>
+        <item>黄为轩</item>
+        <item>庞进尧</item>
+        <item>张雅然</item>
+        <item>周希希</item>
+        <item>赵飞燕</item>
+        <item>丁国辰</item>
+        <item>孙晓</item>
+    </string-array>
+</resources>
